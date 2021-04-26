@@ -1,0 +1,138 @@
+{
+	"name": "featurelocation",
+	"displayName": "featurelocation",
+	"description": "this extension is used to find feature location",
+	"version": "1.0.0",
+	"publisher": "oussama",
+	"engines": {
+		"vscode": "^1.53.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onView:treeViewExplorer"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "package-explorer",
+					"title": "Package Explorer",
+					"icon": "media/dep.svg"
+				}
+			]
+		},
+		"views": {
+			"explorer": [
+				{
+					"id": "treeViewExplorer",
+					"name": "Feature Maps",
+					"icon": "media/dep.svg"
+				}
+			]
+		},
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "feature.location",
+					"when": "resourceFilename =~ /.*.md/"
+				}
+			],
+			"view/title": [
+				{
+					"command": "treeViewExplorer.refreshEntry",
+					"when": "view == treeViewExplorer",
+					"group": "navigation"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "treeViewExplorer.openFile",
+				"title": "Open File",
+				"icon": {
+					"light": "resources/light/folder.svg",
+					"dark": "resources/dark/folder.svg"
+				}
+			},
+			{
+				"command": "treeViewExplorer.refreshEntry",
+				"title": "Refresh TreeView",
+				"icon": {
+					"light": "resources/light/refresh.svg",
+					"dark": "resources/dark/refresh.svg"
+				}
+			},
+			{
+				"command": "feature.location",
+				"title": "Feature Location"
+			}
+		],
+		"configuration": [
+			{
+				"title": "Feature Location Results",
+				"properties": {
+					"view.section": {
+						"type": "string",
+						"default": "view1",
+						"enum": [
+							"view1",
+							"view2"
+						],
+						"enumDescriptions": [
+							"view by file",
+							"view by feature"
+						]
+					},
+					"folder.source": {
+						"type": [
+							"string",
+							"null"
+						],
+						"default": null,
+						"descriptions": "please select the source folder"
+					}
+				}
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"test-compile": "tsc -p ./",
+		"test-watch": "tsc -watch -p ./",
+		"pretest": "npm run test-compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.53.0",
+		"@types/glob": "^7.1.3",
+		"@types/mocha": "^8.0.4",
+		"@types/node": "^12.11.7",
+		"eslint": "^7.19.0",
+		"@typescript-eslint/eslint-plugin": "^4.14.1",
+		"@typescript-eslint/parser": "^4.14.1",
+		"glob": "^7.1.6",
+		"mocha": "^8.2.1",
+		"typescript": "^4.1.3",
+		"vscode-test": "^1.5.0",
+		"ts-loader": "^8.0.14",
+		"webpack": "^5.19.0",
+		"webpack-cli": "^4.4.0"
+	},
+	"dependencies": {
+		"esm": "*",
+		"natural": "^5.0.3",
+		"stopword": "^1.0.7",
+		"string-similarity": "^4.0.4",
+		"tiny-tfidf": "^0.4.6",
+		"tiny-tfidf-node": "0.0.1",
+		"tiny-types": "^1.16.1",
+		"underscore": "^1.13.0"
+	}
+}
