@@ -1,5 +1,5 @@
 import { readFileSync } from "fs";
-import { IFileFeature } from "../interfaces/tree-file.interface";
+import { IFileFeature } from "../interfaces/treeview1.interface";
 import { Corpus } from "tiny-tfidf-node";
 
 

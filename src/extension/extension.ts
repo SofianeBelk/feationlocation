@@ -5,7 +5,7 @@ import { FeatureDocument } from './FeatureDocument';
 import { StopWord } from '../utils/StopWord';
 import { FileReader } from './FileReader';
 import { Duplicates } from '../utils/Duplicates';
-import { IFileFeature, ITreeFile, IWord } from '../interfaces/tree-file.interface';
+import { IFileFeature, ITreeFile, IWord } from '../interfaces/treeview1.interface';
 import { findFeatures} from './LocalisationFealure';
 import { TreeViewProviderOne } from '../treeview/treeview1';
 import { TreeViewProviderTwo } from '../treeview/treeview2';

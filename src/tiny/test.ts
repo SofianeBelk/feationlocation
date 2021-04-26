@@ -5,7 +5,7 @@ const corpus = new Corpus(
     [
         "This is test document number 1. It is quite a short document.",
         "This is test document 2. It is also quite short, and is a test.",
-        "Test document number three is a bit different and is also a tiny bit longer."
+        "Test document number three is a bit different and is also a tiny bit longer." 
     ]
 );
  

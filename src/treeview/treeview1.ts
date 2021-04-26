@@ -1,5 +1,5 @@
 import * as vscode from "vscode";
-import { IFeature, ITreeFile, IWord } from "../interfaces/tree-file.interface";
+import { IFeature, ITreeFile, IWord } from "../interfaces/treeview1.interface";
 import * as path from 'path';
 
 export class TreeViewProviderOne implements vscode.TreeDataProvider<ITreeFile | IFeature | IWord>{
