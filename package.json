@@ -28,7 +28,7 @@
 			"explorer": [
 				{
 					"id": "treeViewExplorer",
-					"name": "Feature Maps",
+					"name": "Feature Location Results",
 					"icon": "media/dep.svg"
 				}
 			]
@@ -72,7 +72,7 @@
 		],
 		"configuration": [
 			{
-				"title": "Feature Location Results",
+				"title": "Feature Location Settings",
 				"properties": {
 					"view.section": {
 						"type": "string",
