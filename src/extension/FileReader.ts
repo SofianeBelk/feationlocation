@@ -44,7 +44,7 @@ export class FileReader{
                        var mesMots =  corpus.getTopTermsForDocument(fNames[j]);
                        for(let k =0; k<mesMots.length; k++){
                            if(mesMots[k][1] > 1){
-                               console.log("do something");
+                               console.log("not yet implemented");
                                //fDescriptions[j].replace(mesMots[k][0], "");
                            }
                        }
