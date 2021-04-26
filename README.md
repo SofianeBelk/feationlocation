@@ -2,14 +2,9 @@
 
 ETAPE POUR LANCER LE PROJET : 
 
-<!-- 1 - npm install
-2 - npm install stopword
-3 - npm install string-similarity
-4 - npm install underscore
-5 - npm install natural -->
+1. il suffit de télélachger le projet avec le dossier node-modules dedans.
+2. lancer l'extension F5.
+3. selectionner le fichier de description .md
+4. un pop up s'affiche pour selectionner le dossier 
+5. en manipulant les paramètres selectionner la vue préféré : view par fichier ou par feature 
 
-1 - selectionner le fichier de description 
-2 - un pop up s'affiche 
-3 - selectionner le dossier dont laquel vous voulez chercher
-4 - ...
-    
