@@ -7,5 +7,4 @@ ETAPE POUR LANCER LE PROJET :
 3. lancer l'extension F5.
 4. selectionner le fichier de description .md
 5. un pop up s'affiche pour selectionner le dossier 
-6. en manipulant les paramètres selectionner la vue préféré : view par fichier ou par feature 
-
+6. en manipulant les paramètres selectionner la vue préféré : view par fichier ou par feature puis cliquer sur l'icon refresh
