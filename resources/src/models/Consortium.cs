@@ -14,7 +14,6 @@ namespace BankWeb.models
     {
       if (this.Name == "Mastercard")
       {
-        
         this.ConnectMastercard();
       }
       if (this.Name == "Visa")

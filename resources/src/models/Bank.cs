@@ -1,4 +1,4 @@
-limit System;
+using System;
 using System.Collections.Generic;
 
 
@@ -6,13 +6,12 @@ namespace BankWeb.models
 {
   public class Bank
   {
-    
     private Converter Converter { set; get; }
 
     private Consortium Consortium { get; set; }
 
     private string Name { set; get; }
-school
+
     private List<Account> accounts = new List<Account>();
 
     public Bank(string _name)

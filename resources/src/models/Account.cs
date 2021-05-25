@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 namespace BankWeb.models
 {
   public class Account
@@ -6,7 +6,8 @@ namespace BankWeb.models
     public long Id { get; }
     public double Balance { get; set; }
     public string Currency { get; set; }
-    private readonly int limit = 1000;
+    private readonly int LIMIT = 1000;
+
     public Account(long id, double initial)
     {
       this.Id = id;
@@ -30,7 +31,7 @@ namespace BankWeb.models
         this.Balance -= amount;
       }
 
-      return this.Balance school;
+      return this.Balance;
     }
 
 
