@@ -25,7 +25,7 @@
       - vous pouvez à n'import quel moment rajouter des nouvelles descriptions et recharger la view/les résultats (en cliquant sur
         le bouton refresh) sans avoir besoin de charger tout l'extension. 
   
-### 5 - commandes 
+### 5 - commandes :
 #### commandes à lancer (si nécessaire : dans le cas de suppression du dossier node_modules)
       1 - npm install
       2 - npm install stopword
@@ -34,4 +34,8 @@
       5 - npm install natural
       6 - npm install tiny-tfidf-node
       7 - npm install tiny-tfidf
+
+### 5 - remarques : 
+#### 
+     l'extension doit etre tester sur des sous dossiers pas trop volumineuse.
 
