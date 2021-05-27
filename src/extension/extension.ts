@@ -214,13 +214,13 @@
 		filefeatures  = readFeaturesFile(featureUri);
 		filefeatures  = removeStopWordandDuplicate(filefeatures);
 		let documents = getFilesPath() ; 
-		let treebyfile    = buildTreeByFile(documents);
-		let treebyfeature = buildTreeByFeature(documents);
 
 		if(getConfigParam() === "view1"){
+			let treebyfile    = buildTreeByFile(documents);
 			makeTreeView(treebyfile) ;
 			return treebyfile;
 		}else{
+			let treebyfeature = buildTreeByFeature(documents);
 			makeTreeView(treebyfeature) ;
 			return treebyfeature;
 		}
