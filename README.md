@@ -26,8 +26,8 @@
         le bouton refresh) sans avoir besoin de charger tout l'extension. 
   
 ### 5 - commandes :
-#### commandes à lancer (si nécessaire : dans le cas de suppression du dossier node_modules)
-      1 - npm install + npm audit fix
+#### commandes à lancer (si nécessaire : dans le cas de suppression du dossier node_modules ou d'erreur d'import)
+      1 - npm install + npm audit fix + aller à l'étape 5.2
       2 - npm install stopword
       3 - npm install string-similarity
       4 - npm install underscore
@@ -35,7 +35,12 @@
       6 - npm install tiny-tfidf-node
       7 - npm install tiny-tfidf
 
-### 5 - remarques : 
+### 5 - remarques important : 
 #### 
-     l'extension doit etre tester sur des sous dossiers pas trop volumineuse.
+     1 - l'extension doit etre tester sur des sous dossiers pas trop volumineuse (il prends un peu du temps pour afficher les résultat).
+     2 - si vous avez supprimer le dossier node_modules, il faut :
+       - lancer la commande 'npm install'.
+       - lancer la commande 'npm audit fix' 
+       - aller dans le fichier node_modules -> tiny-tfidf-node -> package.json et supprimer la ligne (vers la ligne 59) "type": "module" (il faut  supprimer cette ligne pour désactiver les modules ES 6, sinon un message d'erreur va apparaitre : Activating extension failed: Cannot find module './src/Corpus' Require stack)
+       - lancer la commande npm run watch + F5 
 
