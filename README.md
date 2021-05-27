@@ -27,7 +27,7 @@
   
 ### 5 - commandes :
 #### commandes à lancer (si nécessaire : dans le cas de suppression du dossier node_modules)
-      1 - npm install
+      1 - npm install + npm audit fix
       2 - npm install stopword
       3 - npm install string-similarity
       4 - npm install underscore
