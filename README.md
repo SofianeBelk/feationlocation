@@ -5,7 +5,7 @@
 ### 1 - cloner le projet (avec le dossier node_module inclut) dans un répértoire
 ### 2 - tester l'extension :
   #### 2.1 - depuis un terminal :
-      2.1.1 - lancer la commande 'npm run watch'.
+      2.1.1 - lancer la commande 'npm run watch' (si il y'a une erreur de permission il faut donner les droits d'accès au dossier en lancant la commande'chmod 777 ./*').
       2.1.2 - cliquer sur 'Run -> Start Debugging' ou simplement sur F5.
       2.1.3 - choisir le fichier de description .md et cliquer droite dessus.
       2.1.4 - cliquer sur 'Feature Location'.
